@@ -1,6 +1,6 @@
 // The function below will helps us to update our time and date (Time will update per (live) seconds)
 function Time() {
-    var dateandTimeElement = $('.date');
+    var dateandTimeElement = $('.dateandTime');
     var currentDate = dayjs().format('dddd, MMMM D, YYYY| hh:mm:ss A');
     dateandTimeElement.text(currentDate);
   }
@@ -27,7 +27,7 @@ $(document).ready(function() {
         } else {
              $(this).addClass('future');
         }
-        // This is will help in taking user description or input from localstorage to set textarea for selected time block.
+        // This will helps us in taking user description or input from localstorage to set textarea for selected time block.
         var timeId = $(this).attr('id');
         var savedInputs = localStorage.getItem(timeId);
          if (savedInputs){
