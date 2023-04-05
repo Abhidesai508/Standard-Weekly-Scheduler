@@ -3,10 +3,9 @@
 
  ## Links:
 
- Github:
+ Github: https://github.com/Abhidesai508/Standard-Weekly-Scheduler
 
- Live website:
+ Live website: https://abhidesai508.github.io/Standard-Weekly-Scheduler/
 
  ## Screenshot:
- 
- Assets/images/Screenshot 2023-04-05 031456.png
+ ![Alt text](Assets/images/Screenshot%202023-04-05%20031456.png)
