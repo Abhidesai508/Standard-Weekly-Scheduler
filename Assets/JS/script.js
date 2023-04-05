@@ -7,7 +7,7 @@ function Time() {
 
 $(document).ready(function() {
     
-    // We are creating a clock event so that whenever user enter text and click save button then the input will get save in localstorage
+    // We are creating a click event so that whenever user enter text and click save button then the input will get save in localstorage
     $('.saveBtn').on('click', function(event){
     event.preventDefault();
     var timeId = $(this).parent().attr('id');
