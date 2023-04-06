@@ -18,11 +18,15 @@ $(document).ready(function() {
 // In here we are taking the current hour of the day using dayjs and the function below will refresh the color of each time block based on whether it's in the past(grey), present(red), or future(green) relative to the current time.
     $('.time-block').each(function(){
         var currentHour = dayjs().hour();
-        var timeBlockHours = parseInt($(this).attr('id'));
-        if (timeBlockHours < currentHour){
+        var timeBlockHours = $(this).attr('id');
+        var newHours = timeBlockHours.replace('hour-',''); 
+
+        console.log(newHours);
+        if (parseInt(newHours) < currentHour){
             $(this).addClass('past');
+            console.log("time has already passed");
         }  
-        else if(timeBlockHours === currentHour){
+        else if(parseInt(newHours) === currentHour){
             $(this).addClass('present');
         } else {
              $(this).addClass('future');
